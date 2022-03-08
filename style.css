@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
   }
   .wrap {
@@ -25,6 +25,7 @@ body {
     height: 100%;
     left: 0;
     top: 0;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,11 +34,15 @@ body {
     border-radius: 10px;
   }
   .front {
-    background-color: #fff;
+    background-color: #12c2e9;
+    display: flex;
   }
+
+
   .back {
-    background-color: #BDBDBD;
+    background-color: #12c2e9;
     transform: rotateY(180deg);
+    text-align: center;
   }
   /* .card:active .front {transform: rotateY(180deg);}
   .card:active .back {transform: rotateY(360deg);} */
@@ -49,10 +54,13 @@ body {
 .back360 {
     transform: rotateY(360deg);
 }
+.illo {
+    /* padding-top: 30px; */
+}
 
-@media  screen and (max-width:800px) {
-    canvas {
-        width: 400px;
-        height: 400px;
-    }
+@media  screen and (min-width:800px) {
+    /* .illo {
+        width: 800px;
+        height: 800px;
+    } */
 }
