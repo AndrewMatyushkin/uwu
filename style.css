@@ -18,7 +18,22 @@ body {
     height: 300px;
     position: relative;
     perspective: 1000px;
+    z-index: 9;
   }
+
+.card::before {
+    content: "🌸 С 8 Марта 🌸" ;
+    position: absolute;
+    top: -30px;
+    left: 80px;
+}
+.card::after {
+    content: "Жмякни на меня" ;
+    position: absolute;
+    bottom: -30px;
+    left: 80px;
+}
+
   .front, .back {
     position: absolute;
     width: 100%;
