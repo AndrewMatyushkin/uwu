@@ -49,3 +49,10 @@ body {
 .back360 {
     transform: rotateY(360deg);
 }
+
+@media  screen and (max-width:800px) {
+    canvas {
+        width: 400px;
+        height: 400px;
+    }
+}
